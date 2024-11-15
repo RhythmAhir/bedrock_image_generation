@@ -4,7 +4,7 @@
 
 In this project, I developed a serverless architecture for generating images based on user-provided prompts. The system leverages **AWS Lambda**, **AWS Bedrock’s diffusion model ("stability.stable-diffusion-xl-v1")**, **Amazon API Gateway**, and **Amazon S3** to create, process, and store images. The diffusion model produces high-quality images by iteratively refining random noise to match the user’s prompt. Users can interact with the system by sending HTTP POST requests with image prompts, and the generated images are automatically stored in S3, making them accessible for further usage or sharing.
 
-## 2. Designing the AWS Lambda Function
+## 2. Designing the AWS Lambda Function 
 
 The AWS Lambda function serves as the core processing unit of my image generation workflow. This function handles tasks such as parsing user-provided prompts, interacting with the Bedrock diffusion model, and storing the resulting image in S3.
 
